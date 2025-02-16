@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./FirstComponent.module.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"; // Import social icons
 
 const FirstComponent: React.FC = () => {
