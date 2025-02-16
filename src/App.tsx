@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import NavbarPage from "./assets/components/Navbar/NavbarPage";
-import FirstComponent from "./assets/components/PageComponents/firstComponent";
+import FirstComponent from "./assets/components/PageComponents/FirstComponent";
 import SecondComponent from "./assets/components/PageComponents/SecondComponent";
 import ProjectComponent from "./assets/components/PageComponents/ProjectComponent";
 
