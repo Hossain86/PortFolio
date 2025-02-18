@@ -1,0 +1,15 @@
+
+body {
+  background-color: white; /* Or any light color */
+  color: black;
+  margin: 0px 0px;
+  padding: 0px;
+}
+
+.app-container {
+  flex-wrap: wrap; /* ✅ Allows items to adjust */
+  justify-content: center;
+  margin: 0px 0px;
+  padding: 0px;
+}
+

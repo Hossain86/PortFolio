@@ -84,7 +84,7 @@
     padding: 10px;
   }
   .heroImage{
-    max-width: 80%;
+    max-width: 50%;
   }
   .content {
     margin-left:0px;
@@ -95,5 +95,13 @@
   }
   .content p {
     font-size: 0.9rem;
+  }
+}@media (max-width: 458px){
+  .imageContainer {
+    width: 100%;
+    padding: 10px;
+  }
+  .heroImage{
+    max-width: 65%;
   }
 }

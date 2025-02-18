@@ -1,0 +1,24 @@
+.education-container{
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  margin: 50px 20px;
+}
+.education-container h2{
+  text-align: center;
+}
+.education{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 25px;
+  padding: 10px;
+}
+.institution-img{
+  width: 5%;
+  height: auto;
+  padding: 20px;
+  flex: 0.2;
+}
+.institution-info{
+  flex: 1.5;
+}

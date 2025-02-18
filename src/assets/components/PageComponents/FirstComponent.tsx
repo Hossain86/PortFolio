@@ -8,6 +8,14 @@ const FirstComponent: React.FC = () => {
 
   return (
     <div className={styles.FirstComponentContainer}>
+      {/* Right Side Image */}
+      <div className={styles.imageContainer}>
+        <img 
+          src="/image1.png" 
+          alt="Portfolio Preview"
+          className={styles.heroImage}
+        />
+      </div>
       {/* Landing Page Section */}
       <div className={styles.content}>
         <h1 className={styles.FirstComponentheader}>Hi, I'm Aftab Hossain Mikat</h1>
@@ -44,14 +52,7 @@ const FirstComponent: React.FC = () => {
         </div>
       </div>
 
-      {/* Right Side Image */}
-      <div className={styles.imageContainer}>
-        <img 
-          src="/image1.png" 
-          alt="Portfolio Preview"
-          className={styles.heroImage}
-        />
-      </div>
+      
     </div>
   );
 };

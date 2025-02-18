@@ -1,0 +1,94 @@
+.project-container {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  margin: 40px 20px;
+}
+
+/* Style for headings */
+.heading-message {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.heading-message h1 {
+  font-size: 2.5rem;
+}
+
+.heading-message h4 {
+  font-size: 1.2rem;
+  color: #666;
+}
+.single-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex: 1;
+  text-align: center;
+  padding: 25px;
+  margin: 20px 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.single-projects p{
+  font-size: 18px;
+  width: 100%;
+  text-align: justify;
+  line-height: 1.8;
+}
+.single-projects p span{
+  font-size: 14px;
+  color: #434242;
+  word-spacing: 2px;
+}
+.single-projects h4{
+  cursor: pointer;
+  margin: 0px;
+  color: #111;
+  font-size: 1.5rem;
+}
+ .single-projects:hover {
+  transform: scale(1.02);
+  transition: all 0.2s ease;
+}
+.single-projects h4:hover {
+  color: #007bff;
+  transition: all 0.3s ease;
+}
+.project-heroImage {
+  max-width: 20%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+/* Responsive Design for Mobile */
+@media (max-width: 868px) {
+  .project-container {
+    padding: 15px 10px;
+    margin: 40px 0px;
+  }
+
+  .heading-message h1 {
+    font-size: 2rem;
+  }
+  .heading-message h4 {
+    font-size: 1rem;
+  }
+  .single-projects{
+    width: 92%;
+    flex-direction: column;
+    padding: 20px 10px;
+    margin: 20px 0px;
+    gap: 15px;
+  }
+  .single-projects p{
+    font-size: 14px;
+    width: 90%;
+  }
+  .project-heroImage {
+    max-width: 60%;
+    height: auto;
+  }
+}

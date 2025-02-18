@@ -4,6 +4,8 @@ import NavbarPage from "./assets/components/Navbar/NavbarPage";
 import FirstComponent from "./assets/components/PageComponents/FirstComponent";
 import SecondComponent from "./assets/components/PageComponents/SecondComponent";
 import ProjectComponent from "./assets/components/PageComponents/ProjectComponent";
+import EducationComponent from "./assets/components/PageComponents/EducationComponent";
+import ContactMe from "./assets/components/PageComponents/ContactMe";
 
 function App() {
   return (
@@ -28,6 +30,18 @@ function App() {
           <div className="app-container">
           <NavbarPage />
           <ProjectComponent/>
+        </div>
+        }/>
+        <Route  path="/education" element={
+          <div className="app-container">
+          <NavbarPage />
+          <EducationComponent/>
+        </div>
+        }/>
+        <Route  path="/contact" element={
+          <div className="app-container">
+          <NavbarPage />
+          <ContactMe/>
         </div>
         }/>
       </Routes>

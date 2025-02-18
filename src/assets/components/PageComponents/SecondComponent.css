@@ -43,35 +43,74 @@
 .smallheadline-message p br {
   margin: 10px 0;
 }
-.imageContainer {
+.imageContainer1 {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 50px;
   flex: 1;
   text-align: center;
   padding: 25px;
   margin: 0px 50px;
 }
-.imageContainer p{
+.imageContainer1 p{
   font-size: 18px;
-  width: 60%;
+  width: 100%;
   text-align: justify;
   line-height: 1.8;
 }
-.imageContainer h4{
+.imageContainer1 h4{
   cursor: pointer;
+  margin: 0px;
+  color: #111;
+  font-size: 1.5rem;
 }
-.heroImage {
-  max-width: auto;
-  height: 200px;
+.heroImage1 {
+  max-width: 20%;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+.proficient-list li{
+  list-style: none;
+}
+.view-cv{
+  margin-top: 15px;
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.view-cv:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.education{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 25px;
+  padding: 10px;
+}
+.institution-img{
+  width: 5%;
+  height: auto;
+  padding: 20px;
+  flex: 0.2;
+}
+.institution-info{
+  flex: 1.5;
+}
 /* Responsive Design for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .second-container {
-    padding: 15px;
+    padding: 15px 10px;
+    margin: 40px 0px;
   }
 
   .heading-message h1 {
@@ -85,21 +124,31 @@
   .smallheadline-message h4 {
     font-size: 1.2rem;
   }
-
+  .smallheadline-message{
+    width: 90%;
+  }
   .smallheadline-message p {
     font-size: 0.9rem;
   }
-  .imageContainer{
+  .imageContainer1{
+    width: 90%;
     flex-direction: column;
-    padding: 5px;
+    padding: 0px;
     margin: 0px 0px;
   }
-  .imageContainer p{
+  .imageContainer1 p{
     font-size: 14px;
     width: 100%;
   }
-  .heroImage {
-    max-width: 200px;
-    height: 180px;
+  .heroImage1 {
+    max-width: 60%;
+    height: auto;
+  }
+  .education{
+    flex-direction: column;
+    gap:10px;
+  }
+  .institution-img{
+    width: 25%;
   }
 }

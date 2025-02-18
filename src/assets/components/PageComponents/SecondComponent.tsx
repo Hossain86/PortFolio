@@ -1,55 +1,82 @@
-import "./SecondComponent.css"
-
-// interface Props {
-//   data: {
-//     heading: string;
-//     message: string;
-//     smallheadline1: string;
-//     smallDetails1: string;
-//     smallheadline2: string;
-//     smallDetails2: string;
-//   }[];
-// }
+import "./SecondComponent.css";
 
 function SecondComponent() {
-  // const { heading, message, smallheadline1, smallDetails1, smallheadline2, smallDetails2 } = data[0];
 
   return (
     <div className="second-container">
       <div className="heading-message">
         <h1>About Me</h1>
         <h4>Be Humble | Be Kind | Be Strong</h4>
-        <div className="imageContainer">
-        <img 
-          src="/image2.png" 
-          alt="Portfolio Preview"
-          className="heroImage"
+        <div className="imageContainer1">
+          <img
+            src="/image2.png"
+            alt="Portfolio Preview"
+            className="heroImage1"
+          />
+          <p>
+            <h4>Aftab Hossain Mikat</h4>I am a CSE undergraduate at RUET with a
+            passion for web development, problem-solving, and competitive
+            programming. 🚀 I specialize in React, TypeScript, and JavaScript
+            and love building interactive and efficient web applications.
+            <br />
+            <button className="view-cv">View My Resume</button>
+          </p>
+        </div>
+      </div>
+      <div className="smallheadline-message">
+        <h4>Skills</h4>
+        <p>
+          <b>Languages: </b>
+          C++ | Python | JavaScript | React | Typescript <br />
+          <b>Frontend: </b> HTML | CSS | JavaScript | React | Typescript
+          <br />
+          <b>Backend: </b> Node.js | Firebase | MongoDB
+          <br />
+          <b>Others:</b> Git | Github | Vercel
+          <br />
+          <b>Proficient in:</b>
+          <br />
+          <div className="proficient-list">
+            <li>⚡ C++</li>
+            <li>⚡ Python</li>
+            <li>⚡ Javascript And React+Typescript</li>
+            <li>
+              ⚡ Algorithmic Problem Solving (solved 250+ problems on various
+              online platforms)
+            </li>
+            <li>⚡ Data Structures and Algorithms</li>
+            <li>⚡ Competitive Programming</li>
+          </div>
+        </p>
+      </div>
+      <h4>ACADEMIC BACKGROUND</h4>
+      <div className="education">
+        <img
+          className="institution-img"
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/8/87/RUET_logo.svg/1200px-RUET_logo.svg.png"
+          alt="RUET"
         />
-          <p><h4>Aftab Hossain Mikat</h4>I am a CSE undergraduate at RUET with a passion for web development,
-          problem-solving, and competitive programming. 🚀 I specialize in
-          React, TypeScript, and JavaScript and love building interactive and
-          efficient web applications.</p>
-        
+        <div className="instituion-info">
+          <h3>Rajshahi University of Engineering & Technology (RUET)</h3>
+          <h4>B.Sc. in Computer Science & Engineering </h4>
+          CGPA: __/4.00 (First 3 semester)<br></br>
+          December 2022 - June 2027*<br></br>
+          Rajshahi, Bangladesh
+        </div>
       </div>
-        
-      </div>
-      <div className="smallheadline-message">
-        <h4>Job experience</h4>
-        <p>Position: Website Developer <br></br>Organization: ------------------------- </p>
-      </div>
-      <div className="smallheadline-message">
-        <h4>ACADEMIC BACKGROUND</h4>
-        <p>December 2023  - <br></br>
-      B.Sc. in Computer Science & Engineering | CGPA: 3.25/4.00 (First 3 semester)<br></br>
-      Rajshahi University of Engineering & Technology (RUET), Rajshahi, Bangladesh.<br></br>
-      Thesis: ---------------------<br></br>
-      Supervisor: ---------------<br></br><br></br>
-      July, 2019  - June, 2022<br></br>
-      Higher Secondary Certificate Examination | GPA: 5.00/5.00 | Science<br></br>
-      St. Joseph Higher Secondary School, Dhaka, Bangladesh.<br></br><br></br>
-      January, 2014  - January, 2019<br></br>
-      Secondary School Certificate Examination | GPA: 5.00/5.00 | Science<br></br>
-      Rokan Pur High School, Laxmipur, Bangladesh.</p>
+      <div className="education">
+        <img
+          className="institution-img"
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/St._Joseph_Higher_Secondary_School_Monogram.svg/1200px-St._Joseph_Higher_Secondary_School_Monogram.svg.png"
+          alt="RUET"
+        />
+        <div className="instituion-info">
+          <h3>St. Joseph Higher Secondary School (SJHSC)</h3>
+          <h4>Higher Secondary </h4>
+          GPA: 5.00 / 5.00 <br></br>
+          July, 2019 - June, 2022<br></br>
+          Dhaka, Bangladesh
+        </div>
       </div>
     </div>
   );
