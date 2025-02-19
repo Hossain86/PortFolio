@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import "./SecondComponent.css";
 
 function SecondComponent() {
+  const navigate = useNavigate();
   return (
     <div className="second-container">
       <div className="heading-message">
@@ -47,6 +49,12 @@ function SecondComponent() {
             <li>⚡ Competitive Programming</li>
           </div>
         </p>
+        <button
+          className="ctaButton"
+          onClick={() => navigate("/projects")}
+        >
+          See Projects
+        </button>
       </div>
       <h4>ACADEMIC BACKGROUND</h4>
       <div className="education">

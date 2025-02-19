@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import "./ProjectComponent.css";
+import { useNavigate } from "react-router-dom";
 
 function ProjectComponent() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="project-container">
       <div className="heading-message">
@@ -148,6 +154,12 @@ function ProjectComponent() {
             <span>Tools: 🟡 JavaScript</span>
           </p>
         </div>
+        <button
+          className="ctaButton"
+          onClick={() => navigate("/education")}
+        >
+          See Education
+        </button>
       </div>
     </div>
   );

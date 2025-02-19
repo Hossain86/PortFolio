@@ -1,5 +1,11 @@
+import { useEffect } from "react";
 import  "./EducationComponent.css"
+import { useNavigate } from "react-router-dom";
 function EducationComponent(){
+  const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return(
     <div className="education-container">
       <h2>ACADEMIC BACKGROUND</h2>
@@ -31,6 +37,12 @@ function EducationComponent(){
           Dhaka, Bangladesh
         </div>
       </div>
+      <button
+          className="ctaButton"
+          onClick={() => navigate("/contact")}
+        >
+          Contact Me
+        </button>
     </div>
   );
 }
