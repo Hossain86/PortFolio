@@ -28,6 +28,32 @@ function ProjectComponent() {
           </p>
         </div>
 
+        <div className="single-projects">
+          <img
+            src="/projects0.png"
+            alt="Blog Preview"
+            className="project-heroImage"
+            onClick={() =>
+              window.open("https://motivation-blog.vercel.app/", "_blank")
+            }
+          />
+          <p>
+            <h4
+              onClick={() =>
+                window.open("https://motivation-blog.vercel.app/", "_blank")
+              }
+            >
+             Unleash Your Potential: The Power of Relentless Motivation 🚀 [BLOG] 
+            </h4>
+            Are You Ready to Break Barriers and Achieve More? We all have
+            dreams. Some seem impossible, some feel too distant, and some get
+            lost in the noise of everyday life. The decision to keep pushing
+            forward, even when motivation fades.Let’s begin this journey
+            together! 🚀🔥
+            <br />
+            <span>Tools: 🔵 React+TypeScript</span>
+          </p>
+        </div>
         {/* Project 1: GameZone */}
         <div className="single-projects">
           <img

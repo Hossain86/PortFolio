@@ -83,7 +83,7 @@ body {
   padding: 8px 10px;
   border-radius: 5px;
   transition: background 0.3s, color 0.3s;
-  margin-right: 25px;
+  margin-right: 60px;
 }
 
 .dark-mode-toggle:hover {

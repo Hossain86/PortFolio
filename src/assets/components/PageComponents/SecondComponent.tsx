@@ -1,7 +1,6 @@
 import "./SecondComponent.css";
 
 function SecondComponent() {
-
   return (
     <div className="second-container">
       <div className="heading-message">
@@ -9,7 +8,7 @@ function SecondComponent() {
         <h4>Be Humble | Be Kind | Be Strong</h4>
         <div className="imageContainer1">
           <img
-            src="/image2.png"
+            src="/image1.png"
             alt="Portfolio Preview"
             className="heroImage1"
           />

@@ -21,7 +21,7 @@ const NavbarPage: React.FC = () => {
     setDarkMode((prevMode) => {
       const newMode = !prevMode;
       localStorage.setItem("darkMode", newMode.toString());
-      
+
       if (newMode) {
         document.documentElement.classList.add("dark-mode");
       } else {
@@ -33,16 +33,39 @@ const NavbarPage: React.FC = () => {
 
   return (
     <nav className={styles.navbar} ref={menuRef}>
-      <div className={styles.menuIcon} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+      <div
+        className={styles.menuIcon}
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
         ☰
       </div>
 
       <ul className={`${styles.navLinks} ${isMenuOpen ? styles.showMenu : ""}`}>
-        <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
-        <li><Link to="/about-me" onClick={() => setIsMenuOpen(false)}>About Me</Link></li>
-        <li><Link to="/projects" onClick={() => setIsMenuOpen(false)}>Projects</Link></li>
-        <li><Link to="/education" onClick={() => setIsMenuOpen(false)}>Education</Link></li>
-        <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact Me</Link></li>
+        <li>
+          <Link to="/" onClick={() => setIsMenuOpen(false)}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/about-me" onClick={() => setIsMenuOpen(false)}>
+            About Me
+          </Link>
+        </li>
+        <li>
+          <Link to="/projects" onClick={() => setIsMenuOpen(false)}>
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link to="/education" onClick={() => setIsMenuOpen(false)}>
+            Education
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+            Contact Me
+          </Link>
+        </li>
       </ul>
 
       {/* Dark Mode Toggle */}
