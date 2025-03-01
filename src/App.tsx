@@ -6,45 +6,22 @@ import SecondComponent from "./assets/components/PageComponents/SecondComponent"
 import ProjectComponent from "./assets/components/PageComponents/ProjectComponent";
 import EducationComponent from "./assets/components/PageComponents/EducationComponent";
 import ContactMe from "./assets/components/PageComponents/ContactMe";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div className="app-container">
-              <NavbarPage />
-              <FirstComponent />
-            </div>
-          }
-        />
-        <Route  path="/about-me" element={
-          <div className="app-container">
-          <NavbarPage />
-          <SecondComponent/>
-        </div>
-        }/>
-        <Route  path="/projects" element={
-          <div className="app-container">
-          <NavbarPage />
-          <ProjectComponent/>
-        </div>
-        }/>
-        <Route  path="/education" element={
-          <div className="app-container">
-          <NavbarPage />
-          <EducationComponent/>
-        </div>
-        }/>
-        <Route  path="/contact" element={
-          <div className="app-container">
-          <NavbarPage />
-          <ContactMe/>
-        </div>
-        }/>
-      </Routes>
+      <div className="app-container">
+        <NavbarPage />
+        <Routes>
+          <Route path="/" element={<FirstComponent />} />
+          <Route path="/about-me" element={<SecondComponent />} />
+          <Route path="/projects" element={<ProjectComponent />} />
+          <Route path="/education" element={<EducationComponent />} />
+          <Route path="/contact" element={<ContactMe />} />
+        </Routes>
+      </div>
+      <Analytics />
     </Router>
   );
 }
